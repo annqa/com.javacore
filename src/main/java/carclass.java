@@ -4,7 +4,7 @@ public class carclass {
     public String color;
     public int gasVolume;
 
-    public void klakson(){
+    public void beep(){
         System.out.println("beep");
     }
 
