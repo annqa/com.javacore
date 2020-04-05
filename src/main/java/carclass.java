@@ -7,7 +7,8 @@ public class carclass {
     public void beep(){
         System.out.println("beep");
     }
-
-
+    public void printCarInfo(){
+        System.out.println("Model="+brand+"; Color="+color+"; Volume="+gasVolume+";");
+    }
 
 }
