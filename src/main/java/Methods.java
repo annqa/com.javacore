@@ -34,7 +34,7 @@ public class Methods {
 
         System.out.println("____________BOOK____________");
 
-        Book triDruga = new Book();
+        Book triDruga = new Book("lf");
 
         triDruga.setName("Tri Druga");
         triDruga.setAuthor("Pushkin");
@@ -45,7 +45,7 @@ public class Methods {
         String bookAuthor=triDruga.getAuthor();
         int bPrice=triDruga.getBuyPrice();
         int year=triDruga.getYearOfIssue();
-        System.out.println(bookName+", "+bookAuthor+", "+bPrice+", "+year+".");
+
 
         System.out.println("____________CellPhone__________");
 
@@ -60,6 +60,36 @@ public class Methods {
         double screenSize=galaxy.getScreenSize();
 
         System.out.println(brand+", "+model+", "+screenSize+".");
+        System.out.println("__________CONSTRUCTOR CELL PHONE___________");
+        CellPhone galaxy11 = new CellPhone("Sumsung", "S8", 6);
+        CellPhone galaxyNew= new CellPhone();
+
+        System.out.println("____________CONSTRUCTOR BOOK______________");
+
+        Book book1=new Book("Anchar");
+        Book book=new Book("jf");
+        Book book3=new Book("buckvar", "rumyanzev", 15, 2010);
+
+        System.out.println("_______________STUDENT CONSTRUCTOR_______________");
+
+        String[] sub=new String[]{"Math", "History", "Biology", "Geographic"};
+
+        Student john=new Student ("John", "Dole", "Finance", sub);
+        Student jane=new Student("Jane", "Dole", "Finance", sub);
+        Student boris=new Student();
+        boris.setName("Boris");
+        //boris.setLastName("Ivanov");
+       // boris.setMajor("History");
+        boris.setSubjects(sub);
+
+        john.printStudentInfo();
+        jane.printStudentInfo();
+        boris.printStudentInfo();
+
+        System.out.println("                                ");
+        Dog bob=new Dog("Bob","doberman","no diseice",5);
+        bob.printDog();
+
 
     }
 }

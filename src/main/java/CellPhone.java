@@ -4,6 +4,16 @@ public class CellPhone {
 
     private double screenSize;
 
+/*КОНСТРУКТОР*/
+    public CellPhone() {
+
+    }
+    public CellPhone(String brand, String model, double screenSize) {
+        this.brand=brand;
+        this.model=model;
+        this.screenSize=screenSize;
+    }
+/*CONSTRUCTOR*/
     public void setBrand(String brand) {
         this.brand = brand;
     }

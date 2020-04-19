@@ -3,6 +3,23 @@ public class Book {
     private String author;
     private int buyPrice;
     private int yearOfIssue;
+/*CONSTRUCTOR
+* первый конструктор неполный для использования сеттеров*/
+
+    public Book(String name){
+        this.name=name;
+    }
+
+    public Book(String name, String author) {
+        this.name=name;
+        this.author=author;
+    }
+    public Book(String name, String author, int bp, int er){
+        this.author=author;
+        this.name=name;
+        this.buyPrice=bp;
+        this.yearOfIssue=er;
+    }
 /*из-за приватных методов мы получаем доступ через
 сеттеры и геттеры
 вся эта длинная хератень называется ИНКАПСУЛЯЦИЯ
